@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@langchain/community/": "npm:/@langchain/community@latest/",
+    "@langchain/core/": "npm:/@langchain/core@latest/",
+    "pdf-parse": "npm:pdf-parse@^1.1.1",
+    "ignore": "npm:ignore@^5.3.0"
+  }
+}
