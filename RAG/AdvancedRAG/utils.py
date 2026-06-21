@@ -1,17 +1,20 @@
 #!pip install python-dotenv
+
+
 import os
 from dotenv import load_dotenv, find_dotenv
+
 import numpy as np
+from trulens_eval import (
+    Feedback,
+    TruLlama,
+    OpenAI
+)
 
-# === Updated TruLens imports (Modern API) ===
-from trulens.core import Tru, Feedback
-from trulens.providers.openai import OpenAI as TruOpenAI
-from trulens.core import Select
-
+from trulens_eval.feedback import Groundedness
 import nest_asyncio
+
 nest_asyncio.apply()
-
-
 
 
 def get_openai_api_key():
